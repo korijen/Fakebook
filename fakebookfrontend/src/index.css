@@ -1,0 +1,91 @@
+:root {
+  --primaryBlue: #1976d2;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#centerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#userNameDiv {
+  color: var(--primaryBlue);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#newPostContainer {
+  width: 80%;
+}
+
+.commentArea {
+  width: 80%;
+  font-size: 0.875rem;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: -0.5%;
+  border-radius: 12px 12px 0 12px;
+}
+
+#commentContainer {
+  display: flex;
+}
+
+.commentPaper {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+
+.singleCommentPaper {
+  margin: 10px;
+  padding: 5px;
+  margin-left: 0;
+}
+
+.commentName {
+  color: var(--primaryBlue);
+}
+
+.commentPaper > Button {
+  margin: 6px;
+  margin-top: -10px;
+  font-size: 0.8em;
+  width: 14%;
+}
+
+@media (max-width: 1050px) {
+  .commentArea {
+    width: 100%;
+  }
+
+  .commentPaper > Button {
+    padding-top: 1em;
+    font-size: 0.6em;
+    margin-top: 3px;
+    width: 16%;
+  }
+
+  .commentPaper > textarea {
+    margin-bottom: 0px;
+  }
+
+  .commentPaper {
+    margin-top: 2em;
+  }
+}
